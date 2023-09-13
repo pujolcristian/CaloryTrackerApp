@@ -1,0 +1,23 @@
+# Configuración para Ktlint Android en Kotlin
+
+# Archivos de Kotlin
+[*.{kt,kts}]
+
+# Estilo de sangrado (espacios)
+indent_style = space
+indent_size = 4
+
+# Máximo ancho de línea recomendado (puedes ajustarlo)
+max_line_length = 100
+
+# Usar saltos de línea LF en lugar de CRLF (sistema Windows)
+end_of_line = lf
+
+# Espacios finales en líneas en blanco
+trim_trailing_whitespace = true
+
+# Espacio final en líneas vacías
+insert_final_newline = true
+
+# Establecer el conjunto de caracteres del archivo a UTF-8
+charset = utf-8
