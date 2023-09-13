@@ -10,7 +10,6 @@ android {
     namespace = "com.cpujoldev.tracker_data"
 }
 
-
 dependencies {
     implementation(project(Modules.core))
     implementation(project(Modules.trackerDomain))
