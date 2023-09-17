@@ -13,6 +13,4 @@ object Route {
 
     const val TRACKER_OVERVIEW_SCREEN = "tracker_overview"
     const val SEARCH_SCREEN = "search"
-
 }
-
