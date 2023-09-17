@@ -1,6 +1,6 @@
 object ProjectConfig {
     const val appId = "com.cpujoldev.userpost"
-    const val compileSdk = 33
+    const val compileSdk = 34
     const val minSdk = 21
     const val targetSdk = 33
     const val versionCode = 1

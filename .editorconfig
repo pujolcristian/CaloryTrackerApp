@@ -8,7 +8,7 @@ indent_style = space
 indent_size = 4
 
 # Máximo ancho de línea recomendado (puedes ajustarlo)
-max_line_length = 100
+max_line_length = 140
 
 # Usar saltos de línea LF en lugar de CRLF (sistema Windows)
 end_of_line = lf

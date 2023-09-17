@@ -1,6 +1,7 @@
 plugins {
-    `android-library`
-    `kotlin-android`
+    id("com.android.library")
+    kotlin("android")
+    id("kotlin-kapt")
     id("org.jlleitschuh.gradle.ktlint") version "11.0.0"
 }
 

@@ -6,6 +6,7 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -32,12 +33,13 @@ fun WelcomeScreen(
     ) {
         Text(
             text = stringResource(id = R.string.welcome_text),
-            textAlign = TextAlign.Center
+            textAlign = TextAlign.Center,
+            style = MaterialTheme.typography.titleLarge
         )
         Spacer(modifier = Modifier.height(spacing.spaceMedium))
         ActionButton(
             text = stringResource(id = R.string.next),
-            onClick = { onNavigate(UiEvent.Navigate(Route.AGE_SCREEN)) },
+            onClick = { onNavigate(UiEvent.Navigate(Route.GENDER_SCREEN)) },
             modifier = Modifier.align(Alignment.CenterHorizontally)
         )
     }

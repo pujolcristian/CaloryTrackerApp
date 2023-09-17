@@ -1,6 +1,6 @@
 object Compose {
-    const val composeVersion = "1.3.3"
-    const val composeCompilerVersion = "1.4.3"
+    const val composeVersion = "1.5.0"
+    const val composeCompilerVersion = "1.4.5"
 
     const val material = "androidx.compose.material3:material3:1.1.0-rc01"
     const val materialWindowSize = "androidx.compose.material3:material3-window-size-class:1.1.0-rc01"
