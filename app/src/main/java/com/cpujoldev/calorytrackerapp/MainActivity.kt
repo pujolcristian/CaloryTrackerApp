@@ -16,8 +16,13 @@ import androidx.navigation.compose.rememberNavController
 import com.cpujoldev.calorytrackerapp.navigation.navigate
 import com.cpujoldev.calorytrackerapp.ui.theme.CaloryTrackerAppTheme
 import com.cpujoldev.core.navigation.Route
+import com.cpujoldev.onboarding_presentation.activity.ActivityScreen
 import com.cpujoldev.onboarding_presentation.age.AgeScreen
 import com.cpujoldev.onboarding_presentation.gender.GenderScreen
+import com.cpujoldev.onboarding_presentation.goal.GoalScreen
+import com.cpujoldev.onboarding_presentation.height.HeightScreen
+import com.cpujoldev.onboarding_presentation.nutrient_goal.NutrientGoalScreen
+import com.cpujoldev.onboarding_presentation.weight.WeightScreen
 import com.cpujoldev.onboarding_presentation.welcome.WelcomeScreen
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -57,23 +62,29 @@ class MainActivity : ComponentActivity() {
                         }
 
                         composable(Route.HEIGHT_SCREEN) {
-                            // TODO: Implement
+                            HeightScreen(
+                                snackBarHostState = snackBarHostState,
+                                onNavigate = navController::navigate
+                            )
                         }
 
                         composable(Route.WEIGHT_SCREEN) {
-                            // TODO: Implement
-                        }
-
-                        composable(Route.NUTRIENT_GOAL_SCREEN) {
-                            // TODO: Implement
-                        }
-
-                        composable(Route.ACTIVITY_SCREEN) {
-                            // TODO: Implement
+                            WeightScreen(
+                                snackBarHostState = snackBarHostState,
+                                onNavigate = navController::navigate
+                            )
                         }
 
                         composable(Route.GOAL_SCREEN) {
-                            // TODO: Implement
+                            GoalScreen(onNavigate = navController::navigate)
+                        }
+
+                        composable(Route.ACTIVITY_SCREEN) {
+                            ActivityScreen(onNavigate = navController::navigate)
+                        }
+
+                        composable(Route.NUTRIENT_GOAL_SCREEN) {
+                            NutrientGoalScreen(snackBarHostState = snackBarHostState, onNavigate = navController::navigate)
                         }
 
                         composable(Route.TRACKER_OVERVIEW_SCREEN) {

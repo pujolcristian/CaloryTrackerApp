@@ -10,3 +10,7 @@ apply(from = "$rootDir/base-module.gradle")
 android {
     namespace = "com.cpujoldev.onboarding_domain"
 }
+
+dependencies {
+    implementation(project(Modules.core))
+}

@@ -15,4 +15,5 @@ dependencies {
     implementation(project(Modules.core))
     implementation(project(Modules.coreUi))
     implementation(project(Modules.onboardingDomain))
+    implementation("com.google.android.gms:play-services-fitness:21.1.0")
 }
